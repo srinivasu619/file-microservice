@@ -5,3 +5,10 @@ before_install:
 - npm install -g npm
 script:
 - npm install
+deploy:
+  provider: heroku
+  api_key:
+    secure: aBEt/dscPBbsXoKdiJxT3Aw531SBwjlNZq4v5cpjKE2Mw5NUCqbTvf1uDiXnts2ehCN4yNs+AvM21zH5dvaQ/LiUoKGA9uNzj+IqJcjuaYdP8/iu4KRQeYKq6DJ75uZ1RIwyEYpRpaSqRwCbBRY/3cp+K80ksMTP/tJlQLnizfqrvpMzyPbDeeFlM64dGauqkfQIYtEXbNlBft+LUixo4fvTtFjYZhLf7wIOr9HF4B+JaaSdcdiaN0/yly4ZRavOJ8F43yKri9sDboDiY4Gp35T+09wqZOmTT6zgRCLn40Lmvpk1ATMdzHJ5oDGcH7EK+KzPvNRPANRdoFhTj5g0+EJag1hMyCGWrDi+1G4uvHdhhBFCBH1NIHczaw5UT6G8Zd1L+ge7ltfgizpSH1xBpkAtnarf3EYzPtlV39+iFX3idELacNUB0la2GsHjkHvSR6NBab2gokEKGSv9eTVG9Unjb9efEfOp5CZ91NB7qhW/y3KyISWJGDmCvMZzuF/kIK7eSTmNv3xq3VtxVKppXpCm28N/ns2NojAi4IRoLyo2d3y5Y3SheCDGfKMWkLab8xROeyAz3WRl4UsG+QWCdIxNZb5ETz7eD92VDqoIMh74Ve2QzKh1VKWYljWact8TPdyNFbE6nMQEuN99zyRTS2t7WDw9nO9YQsBzOuKdUmU=
+  app: file-micro-service
+  on:
+    repo: srinivasu619/file-microservice
